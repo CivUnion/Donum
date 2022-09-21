@@ -1,16 +1,10 @@
 plugins {
-    id("net.civmc.civgradle")
-}
-
-civGradle {
-    paper {
-        pluginName = "Donum"
-    }
+    id("io.papermc.paperweight.userdev") version "1.3.8"
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
+    paperDevBundle("1.18.2-R0.1-SNAPSHOT")
 
-    compileOnly("net.civmc.civmodcore:paper:2.0.0-SNAPSHOT:dev-all")
-    compileOnly("net.civmc.namelayer:paper:3.0.0-SNAPSHOT:dev")
+    compileOnly("net.civmc.civmodcore:CivModCore:2.4.0:dev-all")
+    compileOnly("net.civmc.namelayer:NameLayer:3.1.0:dev")
 }
